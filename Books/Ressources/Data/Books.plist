@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>category</key>
+		<string>Informatique</string>
+		<key>liste</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Objective-C for Absolute Beginners </string>
+				<key>url</key>
+				<string>http://www.ebooksbucket.com/uploads/itprogramming/cplus/Objective_C_for_Absolute_Beginners.pdf</string>
+				<key>author</key>
+				<string>Gary Bennett</string>
+				<key>image</key>
+				<string>http://www.itbookshub.com/doc-images/13860.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>How to build your first Robot !</string>
+				<key>url</key>
+				<string>http://robotshop.com/letsmakerobots/files/How_To_Make_Your_First_Robot.pdf</string>
+				<key>author</key>
+				<string>Servello</string>
+				<key>image</key>
+				<string>https://s-media-cache-ak0.pinimg.com/564x/b7/35/e8/b735e87a2787df6b7272b8de0ac0f56b.jpg</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>C++ Language Tutorial </string>
+				<key>url</key>
+				<string>http://www.cplusplus.com/files/tutorial.pdf</string>
+				<key>author</key>
+				<string>Juan Soulié</string>
+				<key>image</key>
+				<string>https://image.slidesharecdn.com/clanguageturorial-151108004930-lva1-app6892/95/c-language-turorial-1-638.jpg?cb=1446944054</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Languages</string>
+		<key>liste</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>English as a Second Language : Beginning Student Guide</string>
+				<key>url</key>
+				<string>http://sdce.edu/sites/default/files/beg_esl_guide.pdf</string>
+				<key>author</key>
+				<string> San Diego Education</string>
+				<key>image</key>
+				<string>http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;Format=_SL_300_&amp;ASIN=1447980255&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;ServiceVersion=20070822</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Let’s Talk Arabic</string>
+				<key>url</key>
+				<string>http://speak.ae/wp-content/uploads/2014/06/Lesson-1.pdf</string>
+				<key>author</key>
+				<string>Adam Yacoub</string>
+				<key>image</key>
+				<string>http://s3.amazonaws.com/dmicust/71/thumb/1323333276_9789781245012_Cover.jpg</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

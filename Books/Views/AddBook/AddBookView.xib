@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddBookView" customModule="Books" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxM-jU-zoQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="M36-go-nno">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5C-Ig-Ru9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="closePushed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Emo-A9-guy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u5C-Ig-Ru9" secondAttribute="bottom" id="P49-sY-d2X"/>
+                            <constraint firstItem="u5C-Ig-Ru9" firstAttribute="top" secondItem="M36-go-nno" secondAttribute="top" id="Xa7-QA-Tzr"/>
+                            <constraint firstAttribute="trailing" secondItem="u5C-Ig-Ru9" secondAttribute="trailing" id="bEi-ke-DSn"/>
+                            <constraint firstItem="u5C-Ig-Ru9" firstAttribute="leading" secondItem="M36-go-nno" secondAttribute="leading" id="jVy-8z-MvJ"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1V0-bj-zMS">
+                    <rect key="frame" x="28" y="167" width="319" height="334"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ReO-at-PEk" customClass="TextFieldValidator" customModule="Books" customModuleProvider="target">
+                            <rect key="frame" x="23" y="20" width="274" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="sxP-IH-FoD"/>
+                            </constraints>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="3C2-cw-V1t"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Url : http://********.pdf" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjP-f8-1aP" customClass="TextFieldValidator" customModule="Books" customModuleProvider="target">
+                            <rect key="frame" x="23" y="69" width="274" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="TYr-4a-xGV"/>
+                            </constraints>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="ERz-sa-FKH"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Image" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFe-qL-kLX" customClass="TextFieldValidator" customModule="Books" customModuleProvider="target">
+                            <rect key="frame" x="23" y="118" width="274" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="d9Y-C3-tak"/>
+                            </constraints>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="aan-fR-0wp"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aY8-bF-kSC" customClass="TextFieldValidator" customModule="Books" customModuleProvider="target">
+                            <rect key="frame" x="23" y="167" width="274" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="XSx-cQ-ql6"/>
+                            </constraints>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="ezF-It-5uX"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-SC-wSE">
+                            <rect key="frame" x="23" y="275" width="274" height="39"/>
+                            <color key="backgroundColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="gFz-nh-A6h"/>
+                            </constraints>
+                            <state key="normal" title="Add Book">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="savePushed:" destination="iN0-l3-epB" eventType="touchUpInside" id="hZE-dF-Wpg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hb-si-hHH">
+                            <rect key="frame" x="23" y="216" width="274" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="fta-Uc-QSx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Category">
+                                <color key="titleColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="categoryPushed:" destination="iN0-l3-epB" eventType="touchUpInside" id="eJl-oi-a40"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5q2-SC-wSE" firstAttribute="top" secondItem="5hb-si-hHH" secondAttribute="bottom" constant="20" id="1Fi-sK-kqq"/>
+                        <constraint firstItem="5hb-si-hHH" firstAttribute="leading" secondItem="5q2-SC-wSE" secondAttribute="leading" id="2oI-yQ-mbH"/>
+                        <constraint firstItem="JFe-qL-kLX" firstAttribute="leading" secondItem="aY8-bF-kSC" secondAttribute="leading" id="7Ay-Kt-i3O"/>
+                        <constraint firstItem="5hb-si-hHH" firstAttribute="top" secondItem="aY8-bF-kSC" secondAttribute="bottom" constant="10" id="9TD-sG-pX1"/>
+                        <constraint firstItem="ReO-at-PEk" firstAttribute="top" secondItem="1V0-bj-zMS" secondAttribute="top" constant="20" id="FRz-Js-Bqd"/>
+                        <constraint firstItem="ZjP-f8-1aP" firstAttribute="leading" secondItem="JFe-qL-kLX" secondAttribute="leading" id="FSR-h3-XNb"/>
+                        <constraint firstItem="ReO-at-PEk" firstAttribute="leading" secondItem="1V0-bj-zMS" secondAttribute="leading" constant="23" id="HeV-OG-PTT"/>
+                        <constraint firstItem="ReO-at-PEk" firstAttribute="trailing" secondItem="ZjP-f8-1aP" secondAttribute="trailing" id="MHG-kJ-7wd"/>
+                        <constraint firstItem="5hb-si-hHH" firstAttribute="trailing" secondItem="5q2-SC-wSE" secondAttribute="trailing" id="NMp-dr-Zcd"/>
+                        <constraint firstItem="JFe-qL-kLX" firstAttribute="top" secondItem="ZjP-f8-1aP" secondAttribute="bottom" constant="10" id="Ozo-aT-98f"/>
+                        <constraint firstItem="ReO-at-PEk" firstAttribute="leading" secondItem="ZjP-f8-1aP" secondAttribute="leading" id="Q08-ia-x2w"/>
+                        <constraint firstItem="ZjP-f8-1aP" firstAttribute="top" secondItem="ReO-at-PEk" secondAttribute="bottom" constant="10" id="QP0-1y-a8u"/>
+                        <constraint firstItem="ReO-at-PEk" firstAttribute="centerX" secondItem="1V0-bj-zMS" secondAttribute="centerX" id="RCt-hG-SN1"/>
+                        <constraint firstAttribute="height" constant="334" id="TfN-aF-z1Q"/>
+                        <constraint firstItem="aY8-bF-kSC" firstAttribute="leading" secondItem="5hb-si-hHH" secondAttribute="leading" id="dcO-Ni-VPa"/>
+                        <constraint firstAttribute="trailing" secondItem="ReO-at-PEk" secondAttribute="trailing" constant="22" id="erF-jo-McY"/>
+                        <constraint firstItem="JFe-qL-kLX" firstAttribute="trailing" secondItem="aY8-bF-kSC" secondAttribute="trailing" id="fir-nF-Wfm"/>
+                        <constraint firstAttribute="bottom" secondItem="5q2-SC-wSE" secondAttribute="bottom" constant="20" id="l7r-PN-u8Y"/>
+                        <constraint firstItem="ZjP-f8-1aP" firstAttribute="trailing" secondItem="JFe-qL-kLX" secondAttribute="trailing" id="wcA-L1-ulT"/>
+                        <constraint firstItem="aY8-bF-kSC" firstAttribute="top" secondItem="JFe-qL-kLX" secondAttribute="bottom" constant="10" id="yQ3-W1-Zrg"/>
+                        <constraint firstItem="aY8-bF-kSC" firstAttribute="trailing" secondItem="5hb-si-hHH" secondAttribute="trailing" id="zGi-mA-39T"/>
+                    </constraints>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AM-9p-4fH">
+                    <rect key="frame" x="28" y="265" width="319" height="138"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Category Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8X-9e-D4f" customClass="TextFieldValidator" customModule="Books" customModuleProvider="target">
+                            <rect key="frame" x="23" y="20" width="274" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="dRy-2S-JGn"/>
+                            </constraints>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="mpY-se-It5"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHa-1O-Q8I">
+                            <rect key="frame" x="23" y="79" width="274" height="39"/>
+                            <color key="backgroundColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="Fe7-wl-wIz"/>
+                            </constraints>
+                            <state key="normal" title="Add Category">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addCategoryPushed:" destination="iN0-l3-epB" eventType="touchUpInside" id="dfl-rQ-G1a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sHa-1O-Q8I" firstAttribute="top" secondItem="d8X-9e-D4f" secondAttribute="bottom" constant="20" id="6QW-Ff-DV1"/>
+                        <constraint firstAttribute="height" constant="138" id="CVP-8h-ZP3"/>
+                        <constraint firstItem="d8X-9e-D4f" firstAttribute="centerX" secondItem="8AM-9p-4fH" secondAttribute="centerX" id="In0-KR-BOB"/>
+                        <constraint firstItem="d8X-9e-D4f" firstAttribute="leading" secondItem="8AM-9p-4fH" secondAttribute="leading" constant="23" id="WqD-Ks-Vab"/>
+                        <constraint firstAttribute="trailing" secondItem="d8X-9e-D4f" secondAttribute="trailing" constant="22" id="eCW-i9-nDq"/>
+                        <constraint firstAttribute="bottom" secondItem="sHa-1O-Q8I" secondAttribute="bottom" constant="20" id="hyu-iq-1iV"/>
+                        <constraint firstItem="d8X-9e-D4f" firstAttribute="leading" secondItem="sHa-1O-Q8I" secondAttribute="leading" id="slV-XC-67N"/>
+                        <constraint firstItem="d8X-9e-D4f" firstAttribute="top" secondItem="8AM-9p-4fH" secondAttribute="top" constant="20" id="u4j-66-E7l"/>
+                        <constraint firstItem="d8X-9e-D4f" firstAttribute="trailing" secondItem="sHa-1O-Q8I" secondAttribute="trailing" id="vXv-QY-ttY"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lxM-jU-zoQ" secondAttribute="trailing" id="6fc-hp-sNF"/>
+                <constraint firstItem="1V0-bj-zMS" firstAttribute="trailing" secondItem="8AM-9p-4fH" secondAttribute="trailing" id="8Ul-tQ-pI8"/>
+                <constraint firstItem="1V0-bj-zMS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="GUH-9b-tgs"/>
+                <constraint firstItem="1V0-bj-zMS" firstAttribute="leading" secondItem="8AM-9p-4fH" secondAttribute="leading" id="QxV-8A-yDb"/>
+                <constraint firstItem="lxM-jU-zoQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SQ0-dn-irv"/>
+                <constraint firstItem="lxM-jU-zoQ" firstAttribute="centerY" secondItem="8AM-9p-4fH" secondAttribute="centerY" id="T1L-IE-0q7"/>
+                <constraint firstItem="lxM-jU-zoQ" firstAttribute="centerX" secondItem="1V0-bj-zMS" secondAttribute="centerX" id="Wsi-eP-NhT"/>
+                <constraint firstItem="8AM-9p-4fH" firstAttribute="centerY" secondItem="1V0-bj-zMS" secondAttribute="centerY" id="Zu2-9z-I1m"/>
+                <constraint firstAttribute="bottom" secondItem="lxM-jU-zoQ" secondAttribute="bottom" id="gw6-gN-aNX"/>
+                <constraint firstItem="lxM-jU-zoQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lqd-dd-edc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAddCategory" destination="sHa-1O-Q8I" id="3xF-3y-5GG"/>
+                <outlet property="btnCategory" destination="5hb-si-hHH" id="1Sq-AO-g5a"/>
+                <outlet property="btnSave" destination="5q2-SC-wSE" id="Oq4-fU-EK5"/>
+                <outlet property="scrollBooks" destination="1V0-bj-zMS" id="6D4-sn-5qP"/>
+                <outlet property="scrollCategory" destination="8AM-9p-4fH" id="XM8-5E-Gbd"/>
+                <outlet property="textFieldAuthor" destination="aY8-bF-kSC" id="PCE-wq-hsZ"/>
+                <outlet property="textFieldImageBook" destination="JFe-qL-kLX" id="bzC-us-Zdw"/>
+                <outlet property="textFieldNameBook" destination="ReO-at-PEk" id="Zoc-BE-Sui"/>
+                <outlet property="textFieldNameCategory" destination="d8X-9e-D4f" id="1yb-Jr-zhy"/>
+                <outlet property="textFieldUrlBook" destination="ZjP-f8-1aP" id="a0J-7n-Qze"/>
+            </connections>
+            <point key="canvasLocation" x="-280.5" y="-208.5"/>
+        </view>
+    </objects>
+</document>
