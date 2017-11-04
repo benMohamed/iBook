@@ -4,80 +4,80 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AAShareBubbles.xcscheme</key>
+		<key>AAShareBubbles.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Alamofire.xcscheme</key>
+		<key>Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>AlamofireImage.xcscheme</key>
+		<key>AlamofireImage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>JHSpinner.xcscheme</key>
+		<key>JHSpinner.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>MGSwipeTableCell.xcscheme</key>
+		<key>MGSwipeTableCell.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>Pods-Books.xcscheme</key>
+		<key>Pods-Books.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>RMPScrollingMenuBarController-RMPScrollingMenuBarController.xcscheme</key>
+		<key>RMPScrollingMenuBarController-RMPScrollingMenuBarController.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
-		<key>RMPScrollingMenuBarController.xcscheme</key>
+		<key>RMPScrollingMenuBarController.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
-		<key>SwiftMessages-SwiftMessages.xcscheme</key>
+		<key>SwiftMessages-SwiftMessages.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
-		<key>SwiftMessages.xcscheme</key>
+		<key>SwiftMessages.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
-		<key>SwiftyPickerPopover.xcscheme</key>
+		<key>SwiftyPickerPopover.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
