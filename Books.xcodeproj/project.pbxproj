@@ -652,6 +652,7 @@
 				TargetAttributes = {
 					41761F741FAE1BD80030EA86 = {
 						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = HZM82QQ2RF;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F47029EF1A7F27DB00E30A3C;
 					};
@@ -926,6 +927,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HZM82QQ2RF;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = BooksTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -958,6 +960,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HZM82QQ2RF;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = BooksTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
