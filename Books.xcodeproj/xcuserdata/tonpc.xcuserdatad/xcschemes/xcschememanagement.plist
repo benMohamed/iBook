@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Books.xcscheme_^#shared#^_</key>
+		<key>Books.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>BooksTests.xcscheme_^#shared#^_</key>
+		<key>BooksTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>12</integer>
