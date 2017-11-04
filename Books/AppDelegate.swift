@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 @UIApplicationMain
-class AppDelegate: UIResponderh, UIApplicationDelegate, ReaderViewControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ReaderViewControllerDelegate {
 
     var window: UIWindow?
     var splashVC: SplashVC?
