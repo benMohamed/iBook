@@ -1078,6 +1078,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bmed.letters;
 				PRODUCT_NAME = Books;
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Books/Books-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
